@@ -1,0 +1,81 @@
+/* Base styles */
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Dark background color */
+}
+
+#menu .menubar {
+    float: left;
+}
+
+#menu .menubar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold; /* Bold font for menu items */
+}
+
+#menu .menubar a:hover {
+    background-color: #111; /* Darker background on hover */
+}
+
+#footer {
+    background-color: #333; /* Dark background color */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.menu_list1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold; /* Bold font for footer items */
+}
+
+.menu_list1:first-child {
+    font-size: 25px; /* Larger font size for section titles */
+}
+
+.menu_list1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_list1 a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #menu .menubar {
+        float: none;
+        width: 100%;
+    }
+
+    #menu .menubar a {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    #footer {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 10px; /* Smaller padding for smaller screens */
+    }
+
+    .footer-section {
+        flex: auto; /* Take full width of the container */
+        margin-bottom: 10px; /* Reduced margin between sections */
+    }
+}
