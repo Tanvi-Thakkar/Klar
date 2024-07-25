@@ -4,29 +4,41 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333; /* Dark background color */
+    background-color: #f7f7f7; /* Dark background color */
+}
+.logo-item {
+    float: left; /* Float the logo to the left */
 }
 
+.logo {
+    height: 70px; /* Adjust height as needed */
+    margin-right: 20px; /* Space between logo and menu items */
+    width: 80px;
+}
 #menu .menubar {
-    float: left;
+    float: right;
 }
 
 #menu .menubar a {
     display: block;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 23px 16px;
     text-decoration: none;
     font-weight: bold; /* Bold font for menu items */
+    height: 26px;
+    font-size: 17px;
 }
 
 #menu .menubar a:hover {
-    background-color: #111; /* Darker background on hover */
+    transform: scale(1.2);
+    color: #fa0303;
 }
 
 #footer {
-    background-color: #333; /* Dark background color */
-    color: white;
+    margin-top: 70%;
+    background-color: #f7f7f7; /* Dark background color */
+    color: rgb(0, 0, 0);
     padding: 20px;
     display: flex;
     flex-wrap: wrap; /* Enable wrapping for smaller screens */
@@ -50,32 +62,12 @@
 }
 
 .menu_list1 a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .menu_list1 a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    text-decoration: underline;/* Underline on hover for links */
+    color: blue;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #menu .menubar {
-        float: none;
-        width: 100%;
-    }
-
-    #menu .menubar a {
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
-
-    #footer {
-        flex-direction: column; /* Stack sections vertically */
-        padding: 10px; /* Smaller padding for smaller screens */
-    }
-
-    .footer-section {
-        flex: auto; /* Take full width of the container */
-        margin-bottom: 10px; /* Reduced margin between sections */
-    }
-}
