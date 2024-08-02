@@ -31,7 +31,34 @@
 }
 
 #menu .menubar a:hover {
-    transform: scale(1.2);
+   
+    color: #fa0303;
+}
+
+#sub_header{
+    list-style-type: none;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+#navbar .menubar{
+    float: left;
+    color: rgb(72, 70, 70);
+    margin-left: 5%;
+    list-style-type: none;
+    
+}
+#navbar .menubar a {
+    display: block;
+    color: rgb(72, 70, 70);
+    text-align: center;
+    padding: 0 5px 3px;
+    text-decoration: none;
+    font-size: 15px;
+}
+#navbar .menubar a:hover {
     color: #fa0303;
 }
 
